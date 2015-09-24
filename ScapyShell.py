@@ -20,7 +20,6 @@ ENDC = '\033[0m'
 def Head():
 	print (HEADER + "######## Axi0m_S's Shell - Network ########" + ENDC)
 
-
 class Shell(cmd.Cmd):
 	def do_exit(self, line):
 		exit(0)
