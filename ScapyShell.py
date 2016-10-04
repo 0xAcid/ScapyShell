@@ -17,18 +17,24 @@ FAIL = '\033[91m'
 ENDC = '\033[0m'
 # Get system environment
 
+# Shell Header
 def Head():
 	print (HEADER + "######## Scapy Shell - Network ########" + ENDC)
 
 class Shell(cmd.Cmd):
+	# Exit
 	def do_exit(self, line):
 		exit(0)
 		
+	# Hide message in Ping	
 	def do_Hidden_Ping_MSG(self, args):
 		Hidden_Ping_MSG(args)
 		
+	# Exit help
 	def help_exit(self):
 		print("Exit shell.")
+		
+	# Hidden Ping help
 	def help_Hidden_Ping_MSG(self):
 		print("Send ping with hidden messages in it.")
 		
@@ -38,6 +44,7 @@ class Shell(cmd.Cmd):
 
 if __name__ == '__main__':
 	Head()
+	# Start shell
 	Axi0m_S_Shell = Shell()
 	Axi0m_S_Shell.prompt = OKBLUE + "Root@Scap:~# " + ENDC
 	Axi0m_S_Shell.cmdloop("Welcome.\n")
