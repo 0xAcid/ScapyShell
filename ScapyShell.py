@@ -30,8 +30,8 @@ class Shell(cmd.Cmd):
 	def do_Hidden_Ping_MSG(self, args):
 		Hidden_Ping_MSG(args)
         # Do an ARP Request
-        def do_ARP_Request(self, args):
-            ARP_Request(args)
+	def do_ARP_Request(self, args):
+		ARP_Request(args)
 	# Exit help
 	def help_exit(self):
 		print("Exit shell.")
@@ -40,8 +40,8 @@ class Shell(cmd.Cmd):
 	def help_Hidden_Ping_MSG(self):
 		print("Send ping with hidden messages in it.")
 	# ARP Request help
-        def help_ARP_Request(self):
-            print("Send an ARP request with custom parameters")
+	def help_ARP_Request(self):
+		print("Send an ARP request with custom parameters")
 	def emptyline(self):
          pass
 		

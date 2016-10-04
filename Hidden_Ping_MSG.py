@@ -9,7 +9,7 @@ def Craft_Packet(IP_dest, MSG, Spam):
 	STR = ''
 	for i in MSG:
 		STR += i
-		STR += " "
+		STR += " "	
 	try:
 		socket.inet_aton(IP_dest)
 	except:
