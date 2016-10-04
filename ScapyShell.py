@@ -18,7 +18,7 @@ ENDC = '\033[0m'
 # Get system environment
 
 def Head():
-	print (HEADER + "######## Axi0m_S's Shell - Network ########" + ENDC)
+	print (HEADER + "######## Scapy Shell - Network ########" + ENDC)
 
 class Shell(cmd.Cmd):
 	def do_exit(self, line):
@@ -39,6 +39,6 @@ class Shell(cmd.Cmd):
 if __name__ == '__main__':
 	Head()
 	Axi0m_S_Shell = Shell()
-	Axi0m_S_Shell.prompt = OKBLUE + "Root@Ax:~# " + ENDC
+	Axi0m_S_Shell.prompt = OKBLUE + "Root@Scap:~# " + ENDC
 	Axi0m_S_Shell.cmdloop("Welcome.\n")
 	
